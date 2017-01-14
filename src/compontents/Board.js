@@ -15,9 +15,9 @@ class Board extends React.Component {
     super(props);
 
     const data = [
-      { id: 1, index: 0, row: { id: 1, title: 'item1' } },
-      { id: 2, index: 1, row: { id: 2, title: 'item2' } },
-      { id: 3, index: 2, row: { id: 3, title: 'item3' } }
+      { title: 'item1' },
+      { title: 'item2' },
+      { title: 'item3' }
     ]
 
     this.state = {
@@ -55,7 +55,7 @@ class Board extends React.Component {
         onPressIn={this.onPressIn.bind(this)}
       >
         <View style={{ height: 30 }}>
-          <Text>{item.row.title}</Text>
+          <Text>{item.title}</Text>
         </View>
       </TouchableWithoutFeedback>
     )
