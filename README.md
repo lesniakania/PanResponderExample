@@ -29,7 +29,7 @@ this.setState({
 });
 ```
 
-![With](with-removing-items.gif)
+![With](with-changing-data-source.gif)
 
 Funny thing is that it works if I change those lines into:
 
