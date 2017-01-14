@@ -5,16 +5,16 @@ I have `Board` component which is a `ScrollView` and I have `PanResponder` attac
 `ListView` row is a simple `TouchableWithoutFeedback` with `onPressIn`.
 In `onPressIn` I have timeout after that I decrease number if items displayed in the `Column`.
 
-###Expected behaviour###:
+###Expected behaviour:
 
 When I start touches and keep moving cursor, even after changing number of items, I should get events about the move from `PanResponder`.
 
-###Actual behaviour###:
+###Actual behaviour:
 
 When I start touches and keep moving cursor, decreasing number of items, I don't get events from `PanResponder` about the move anymore.
 Funny thing is it's not only about the change of datasource, cause when I increase number of items it works.
 
-###Gifs demonstarting the issue###:
+###Gifs demonstarting the issue:
 
 Without changing `Column` datasource I get all the events correcly:
 
